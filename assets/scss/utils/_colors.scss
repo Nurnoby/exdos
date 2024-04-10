@@ -6,14 +6,14 @@ $colors: (
     heading: (
         primary: #0A0E1A,
     ),
-    grey: (
-        1:#f7f7f7,
-        2:#F5F6F8,
+    bg: (
+        1:#23252D,        
 
     ),
     text: (
         body:#57595C,
         p:#57595C,
+        cta:#B1B4BA,
     ),
     stroke:(
         1:#f4f4f4,
@@ -25,6 +25,6 @@ $colors: (
 
     ),
     border: (
-        1: #f1f1f1,
+        1: rgba(255,255,255,.15),
     )
 );

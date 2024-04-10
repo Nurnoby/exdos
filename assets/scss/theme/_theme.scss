@@ -143,7 +143,7 @@ body {
 	font-family: var(--bee-font-body);
 	font-size: 17px;
 	font-weight: normal;
-	color: var(--bee-black);
+	color: var(--bee-text-body);
 	line-height: 26px;
 }
 
@@ -157,36 +157,36 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--bee-font-heading);
-	color: var(--bee-theme-sec-color);
+	font-family: var(--bee-ff-heading);
+	color: var(--bee-heading-primary);
 	margin-top: 0px;
-	font-weight: 700;
+	font-weight: var(--bee-fw-normal);
 	line-height: 1.2;
 	// @include tp-transition(color);
 }
 
 h1 {
-	font-size: 48px;
+	font-size: var(bee-fz-h1);
 }
   
 h2 {
-font-size: 38px;
+	font-size: var(bee-fz-h2);
 }
 
 h3 {
-font-size: 28px;
+	font-size: var(bee-fz-h3);
 }
 
 h4 {
-font-size: 24px;
+	font-size: var(bee-fz-h4);
 }
 
 h5 {
-font-size: 18px;
+	font-size: var(bee-fz-h5);
 }
 
 h6 {
-font-size: 16px;
+	font-size: var(bee-fz-h6);
 }
 
 ul {

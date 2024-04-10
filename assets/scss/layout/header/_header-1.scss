@@ -7,6 +7,9 @@
     right: 0;
 
 }
+.bee-header-border{
+    border-bottom: 1px solid var(--bee-border-1);
+}
 .bee-logo{
     & img{
         width: 166px;
@@ -85,4 +88,48 @@
 .hero{
     background-color: var(--bee-common-black);
     min-height: 500px;
+}
+
+
+.bee-header{
+    &-search{
+        padding:0 30px;
+    }
+    &-cta{
+        display: flex;
+        align-items: center;
+        border-left:1px solid var(--bee-border-1);
+        padding:28px 40px;
+        &-icon{
+            margin-right: 14px;
+            & img{
+                height: 100%;
+            }
+        }
+        &-text{
+            display: block;
+            & span{
+                font-size: var(--bee-fz-cta);
+                font-family: var(--bee-ff-body);
+                font-weight: var(--bee-fw-regular);            
+                color: var(--bee-text-cta);
+                margin-bottom: 10px;
+                line-height: 1;
+            }
+            & h4{        
+                font-size: var(--bee-fz-h4);                           
+                color: var(--bee-common-white);
+                margin-bottom: 0;   
+                line-height: 1;                        
+            }
+        }
+    }
+    &-humberger{
+        & button{
+            background-color: var(--bee-bg-1);
+            padding: 37px 23px;
+            line-height: 1;
+        }
+    }
+
 }
