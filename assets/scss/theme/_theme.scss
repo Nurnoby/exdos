@@ -140,7 +140,7 @@
 	typography css start 
 ---------------------------------*/
 body {
-	font-family: var(--bee-font-body);
+	font-family: var(--bee-ff-body);
 	font-size: 17px;
 	font-weight: normal;
 	color: var(--bee-text-body);
@@ -166,27 +166,27 @@ h6 {
 }
 
 h1 {
-	font-size: var(bee-fz-h1);
+	font-size: var(--bee-fz-h1);
 }
   
 h2 {
-	font-size: var(bee-fz-h2);
+	font-size: var(--bee-fz-h2);
 }
 
 h3 {
-	font-size: var(bee-fz-h3);
+	font-size: var(--bee-fz-h3);
 }
 
 h4 {
-	font-size: var(bee-fz-h4);
+	font-size: var(--bee-fz-h4);
 }
 
 h5 {
-	font-size: var(bee-fz-h5);
+	font-size: var(--bee-fz-h5);
 }
 
 h6 {
-	font-size: var(bee-fz-h6);
+	font-size: var(--bee-fz-h6);
 }
 
 ul {
@@ -296,13 +296,13 @@ textarea{
 }
 
 *::-moz-selection {
-	background: var(--bee-common-black);
-	color: var(--bee-common-white);
+	background: var(--bee-theme-2);
+	color: var(--bee-common-black);
 	text-shadow: none;
 }
 *::selection {
-	background: var(--bee-common-black);
-	color: var(--bee-common-white);
+	background: var(--bee-theme-2);
+	color: var(--bee-common-black);
 	text-shadow: none;
 }
 

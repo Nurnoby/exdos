@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 
 }
 .bee-header-border{
@@ -45,7 +46,7 @@
                     padding: 16px 0;
                     opacity: 0;
                     visibility: hidden;
-                    transition: .3s all ease-in-out;
+                    @include transition(.3s);                  
                     & li{
                         display: block;
                         margin-right: 0;
@@ -96,10 +97,10 @@
         padding:0 30px;
     }
     &-cta{
-        display: flex;
+        @include flexbox();        
         align-items: center;
         border-left:1px solid var(--bee-border-1);
-        padding:28px 40px;
+        padding:24px 40px;
         &-icon{
             margin-right: 14px;
             & img{
@@ -118,8 +119,7 @@
             }
             & h4{        
                 font-size: var(--bee-fz-h4);                           
-                color: var(--bee-common-white);
-                margin-bottom: 0;   
+                color: var(--bee-common-white);                
                 line-height: 1;                        
             }
         }
