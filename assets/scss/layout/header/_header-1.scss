@@ -1,0 +1,88 @@
+@use '../../utils' as *;
+
+.bee-transparent-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+.bee-logo{
+    & img{
+        width: 166px;
+    }
+}
+.bee-main-menu{
+    & nav{
+        & ul{
+            & li{
+                display: inline-block;
+                margin-right: 40px;
+                position: relative;
+                & a{
+                    font-family: var(--bee-ff-heading);
+                    font-size:  var(--bee-fz-body);
+                    color: var(--bee-common-white);
+                    line-height:28px;
+                    padding: 36px 0;                    
+                    display: block;
+
+                }
+                &:last-child{
+                    & a {
+                        padding-right: 0;
+                    }
+                }
+                & .sub-menu{
+                    position: absolute;
+                    width: 220px;
+                    top:110%;
+                    left: 0;
+                    background-color: var(--bee-common-white);
+                    padding: 16px 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .3s all ease-in-out;
+                    & li{
+                        display: block;
+                        margin-right: 0;
+                        & a{
+                            color:var(--bee-common-black);
+                            padding: 4px 25px;
+                        }
+                        & .sub-menu{
+                            left: 90%;
+                            top:0;
+                            opacity: 0;
+                            visibility: hidden;                            
+                        }
+                        &:hover{
+                            & > a{
+                                color:var(--bee-theme-1);
+                            }
+                            & .sub-menu{
+                                left:100%;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    & a{
+                        color:var(--bee-theme-2);
+                    }
+                    & .sub-menu{
+                        top: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+.hero{
+    background-color: var(--bee-common-black);
+    min-height: 500px;
+}

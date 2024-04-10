@@ -1,0 +1,1 @@
+sass --watch "D:\PSD to Html\exdos-html template\assets\scss\main.scss":"D:\PSD to Html\exdos-html template\assets\css\style.css"
