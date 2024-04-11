@@ -66,8 +66,8 @@
         font-size: var(--bee-fz-cta);
         color:var(--bee-text-cta);
         text-transform: uppercase;
-        transform: rotate(-90deg);
-        display: block ruby;
+        transform: rotate(-90deg);      
+        white-space: nowrap;
         margin-top: 90px;
         & a{
             padding-right: 10px;

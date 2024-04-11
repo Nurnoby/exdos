@@ -7,5 +7,6 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
 <h1>Changes Log:</h1>
 <ul>
 <li>Header Completed for Main Home Page</li>
-<li>Hero section updated</li>
+<li>Hero Section Updated</li>
+<li>Hero Section Chrome Error Fixed/li>
 </ul>
