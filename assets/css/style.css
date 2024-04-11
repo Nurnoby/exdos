@@ -16573,6 +16573,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--bee-heading-primary);
+  overflow: hidden;
 }
 
 .bee-hero-title {
@@ -16593,6 +16594,9 @@ textarea {
   margin-right: 50px;
 }
 
+.bee-hero-shape {
+  z-index: 1;
+}
 .bee-hero-shape-1 {
   top: 370px;
   left: -50px;
@@ -16612,6 +16616,36 @@ textarea {
 .bee-hero-shape-5 {
   bottom: 135px;
   right: 180px;
+}
+
+.hero-info {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-around;
+  top: 100px;
+  left: 0;
+  border-right: 1px solid var(--bee-border-1);
+}
+.hero-info .hero-social, .hero-info .hero-info-text {
+  font-size: var(--bee-fz-cta);
+  color: var(--bee-text-cta);
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  display: block ruby;
+  margin-top: 90px;
+}
+.hero-info .hero-social a, .hero-info .hero-info-text a {
+  padding-right: 10px;
+}
+.hero-info .hero-social a:hover, .hero-info .hero-info-text a:hover {
+  color: var(--bee-theme-2);
+}
+.hero-info .hero-info-text {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
