@@ -8,5 +8,6 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
 <ul>
 <li>Header Completed for Main Home Page</li>
 <li>Hero Section Updated</li>
-<li>Hero Section Chrome Error Fixed/li>
+<li>Hero Section Chrome Error Fixed</li>
+<li>About Section Updated</li>
 </ul>
