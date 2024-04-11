@@ -195,12 +195,12 @@ ul {
 }
 
 p {
-	font-family: var(--bee-ff-p);
-	font-size: 14px;
-	font-weight: 400;
-	color: var(--bee-text-body);
+	font-family: var(--bee-ff-body);
+	font-size: var(--bee-fz-body);
+	font-weight: var(--bee-fw-normal);
+	color: var(--bee-text-body);	
 	margin-bottom: 15px;
-	line-height: 26px;
+	line-height: 1.5;
 }
 
 

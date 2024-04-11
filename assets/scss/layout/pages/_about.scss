@@ -1,1 +1,33 @@
 @use '../../utils' as *;
+
+.bee-about-area{
+    background-color: var(--bee-bg-2);   
+    @include background;
+}
+
+.bee-about-feature{
+    & img{
+        @include border-radius(20px);
+    }
+}
+.bee-video-box{
+    & .bee-video-info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        & .bee-video-icon{
+            height: 80px;
+            width: 80px;
+            line-height: 80px;
+            text-align: center;
+            border: 1px solid var(--bee-border-2);
+            @include border-radius(50%);    
+            margin-right: 20px;        
+        }
+        & h3{
+            color: var(--bee-border-2);
+            text-transform: capitalize;
+            margin: 0;
+        }
+    }
+}

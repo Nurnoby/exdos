@@ -2,16 +2,16 @@
 .bee-btn{
     font-family: var(--bee-ff-heading);
     font-size: var(--bee-fz-body);
-    color:var(--bee-heading-primary);
+    color:var(--bee-common-white);
     text-transform: capitalize;
-    background-color: var(--bee-theme-2);
-    padding:24px 46px;
+    background-color: var(--bee-theme-1);
+    padding:17px 46px;
     @include border-radius(3px);
     display: inline-block;     
     position: relative;
     overflow: hidden;
     &:hover{
-        color:var(--bee-heading-primary);
+        color:var(--bee-common-white);
         &:before{
             left: 110%;            
         }
@@ -23,10 +23,20 @@
         height: 100%;
         top: 0;
         right: 0;
-        background-color: rgba(0,0,0,.15);
+        background-color: rgba(255,255,255,.15);
         transform: skewX(-20deg);
         left: 94%;
         @include transition(.3s);
 
+    }
+}
+.bee-btn-sec{
+    color: var(--bee-heading-primary);
+    background-color: var(--bee-theme-2);
+    &:hover{
+        color:var(--bee-heading-primary);
+    }
+    &:before{
+        background-color: rgba(0,0,0,.15);
     }
 }

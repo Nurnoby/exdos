@@ -1,1 +1,15 @@
 @use '../utils' as *;
+
+
+.bee-section-title{
+
+    & h2{
+        text-transform: capitalize;
+        margin-bottom: 40px;
+
+    }
+    & p{
+        margin-bottom: 30px;
+    }
+
+}
