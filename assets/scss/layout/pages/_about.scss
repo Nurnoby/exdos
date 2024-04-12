@@ -3,6 +3,7 @@
 .bee-about-area{
     background-color: var(--bee-bg-2);   
     @include background;
+    overflow: hidden;
 }
 
 .bee-about-feature{
@@ -29,5 +30,22 @@
             text-transform: capitalize;
             margin: 0;
         }
+    }
+}
+.bee-about-shape{
+    & .shape-1{
+        top:20%;
+        left: 0;
+        z-index: 1;
+    }
+    & .shape-2{
+        top:-3%;
+        right: -10%;
+        z-index: 1;
+    }
+    & .shape-3{
+        bottom: 25%;
+        left: 35%;
+        z-index: 1;
     }
 }
