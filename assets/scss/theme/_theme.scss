@@ -266,22 +266,25 @@ input[type="password"],
 input[type="url"],
 textarea{
 	outline: none;
-	background-color: #fff;
+	background-color: transparent;
 	height: 56px;
 	width: 100%;
 	line-height: 56px;
-	font-size: 14px;
-	color: var(--bee-common-black);
-	padding-left: 26px;
+	font-size: var(--bee-fz-cta);
+	font-weight: var(--bee-fw-medium);
+	text-transform: lowercase;
+	color:var(--bee-text-body);
+	padding-left: 0;
 	padding-right: 26px;
-	border: 1px solid #E0E2E3;
+	border:0;
+	border-bottom: 1px solid var(--bee-border-2);
 
 	// @include tp-placeholder{
 	// 	color: #95999D;
 	// }
 
 	&:focus{
-		border-color: var(--bee-common-black);
+		border-color: var(--bee-border-2);
 		&::placeholder{
 			opacity: 0;
 		}
@@ -307,11 +310,13 @@ textarea{
 }
 
 *::-moz-placeholder {
+	text-transform: uppercase;
 	color: var(--bee-common-black);
 	font-size: 14px;
 	opacity: 1;
 }
 *::placeholder {
+	text-transform: uppercase;
 	color: var(--bee-common-black);
 	font-size: 14px;
 	opacity: 1;

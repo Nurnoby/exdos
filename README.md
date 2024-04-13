@@ -10,4 +10,5 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
 <li>Hero Section Updated</li>
 <li>Hero Section Chrome Error Fixed</li>
 <li>About Section Updated</li>
+<li>Newsletter Section Updated</li>
 </ul>

@@ -1,1 +1,45 @@
 @use '../../utils' as *;
+
+.bee-newsletter{
+    &-margin{
+        margin-top: -110px;
+    }
+    &-bg{
+        @include border-radius(20px);
+    }
+    &-box{
+        & .big-heading{
+            font-size: 100px;
+            font-weight: var(--bee-fw-bold);
+            line-height: 72px;
+            text-transform: capitalize;
+            color: rgba(255, 255, 255, 0.1);
+            bottom: -20px;
+            right: 235px;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        & input{
+            text-transform: lowercase;
+            border-color: var(--bee-common-white);
+            color: var(--bee-common-white);         
+            &:focus{
+                border-color: var(--bee-common-white);
+            }
+            @include bee-placeholder{
+                color:var(--bee-common-white)
+            }
+        }
+    }
+    &-input{
+        width: calc(100% - 205px);
+       & img{
+        position: absolute;
+        right: 15px;
+        bottom: 22px;
+       }
+    }
+}

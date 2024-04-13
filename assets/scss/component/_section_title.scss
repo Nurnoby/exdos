@@ -4,12 +4,16 @@
 .bee-section-title{
 
     & h2{
-        text-transform: capitalize;
-        margin-bottom: 40px;
-
+        color: var(--bee-heading-primary);
+        text-transform: capitalize;  
+    }
+    &-white{
+        & h2{
+            color: var(--bee-common-white);
+        }
     }
     & p{
-        margin-bottom: 30px;
+        color: var(--bee-text-body);       
     }
 
 }
