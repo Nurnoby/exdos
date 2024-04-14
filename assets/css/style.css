@@ -16714,6 +16714,21 @@ textarea {
   padding: 50px 40px;
   margin-right: -1px;
   background-color: var(--bee-common-white);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.bee-service-item:hover {
+  background-color: var(--bee-bg-2);
+}
+.bee-service-item:hover .bee-service-btn {
+  background-color: var(--bee-theme-1);
+  color: var(--bee-common-white);
+}
+.bee-service-item:hover .bee-service-btn:after {
+  color: var(--bee-common-white);
 }
 .bee-service-item .bee-service-icon img {
   height: 92px;

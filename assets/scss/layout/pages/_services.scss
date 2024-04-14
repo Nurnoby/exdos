@@ -9,6 +9,17 @@
     padding: 50px 40px;
     margin-right: -1px;
     background-color: var(--bee-common-white);
+    @include transition(.3s);  
+    &:hover{
+        background-color: var(--bee-bg-2);
+        & .bee-service-btn{
+            background-color: var(--bee-theme-1);
+            color: var(--bee-common-white);
+            &:after{           
+                color: var(--bee-common-white);           
+            }
+        }
+    }
     & .bee-service{
         &-icon img{
             height: 92px;
