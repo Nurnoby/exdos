@@ -1,1 +1,52 @@
 @use '../../utils' as *;
+
+.bee-service-area {
+    background-color: var(--bee-common-white);
+}
+.bee-service-item{
+    border:1px solid var(--bee-border-2);
+    border-radius: 20px;
+    padding: 50px 40px;
+    margin-right: -1px;
+    background-color: var(--bee-common-white);
+    & .bee-service{
+        &-icon img{
+            height: 92px;
+            margin-bottom: 30px;
+        }
+
+        &-content{
+            & h3{              
+                margin:0;
+                margin-bottom: 15px;
+            }
+            & p{
+                margin:0;
+                margin-bottom: 20px;
+            }
+            & .service-list{
+                & ul{
+                    & li{
+                        position: relative;
+                        font-family: var(--bee-ff-body);
+                        font-size: 17px;
+                        color: var(--bee-text-body);
+                        list-style: none;
+                        padding-left: 15px;
+                        &:before{
+                            content: "\f111";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            font-family: "Font Awesome 6 Pro";
+                            color: var(--bee-text-body);
+                            margin-left: 0;
+                            font-weight: 900;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

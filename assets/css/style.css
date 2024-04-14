@@ -139,6 +139,7 @@
   --bee-heading-primary: #0A0E1A;
   --bee-bg-1: #23252D;
   --bee-bg-2: #FFFBF4;
+  --bee-bg-3: #FBF6EF;
   --bee-text-body: #57595C;
   --bee-text-p: #57595C;
   --bee-text-cta: #B1B4BA;
@@ -221,6 +222,52 @@
 }
 .bee-btn-sec:before {
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.bee-service-btn {
+  font-family: var(--bee-ff-heading);
+  font-size: var(--bee-fz-body);
+  width: 100%;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: var(--bee-heading-primary);
+  background-color: var(--bee-bg-3);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.bee-service-btn:after {
+  content: "\e09f";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--bee-heading-primary);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.bee-service-btn:hover {
+  background-color: var(--bee-theme-1);
+  color: var(--bee-common-white);
+}
+.bee-service-btn:hover:after {
+  color: var(--bee-common-white);
 }
 
 .bee-section-title h2 {
@@ -16655,6 +16702,49 @@ textarea {
   bottom: 25%;
   left: 35%;
   z-index: 1;
+}
+
+.bee-service-area {
+  background-color: var(--bee-common-white);
+}
+
+.bee-service-item {
+  border: 1px solid var(--bee-border-2);
+  border-radius: 20px;
+  padding: 50px 40px;
+  margin-right: -1px;
+  background-color: var(--bee-common-white);
+}
+.bee-service-item .bee-service-icon img {
+  height: 92px;
+  margin-bottom: 30px;
+}
+.bee-service-item .bee-service-content h3 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.bee-service-item .bee-service-content p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.bee-service-item .bee-service-content .service-list ul li {
+  position: relative;
+  font-family: var(--bee-ff-body);
+  font-size: 17px;
+  color: var(--bee-text-body);
+  list-style: none;
+  padding-left: 15px;
+}
+.bee-service-item .bee-service-content .service-list ul li:before {
+  content: "\f111";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 6 Pro";
+  color: var(--bee-text-body);
+  margin-left: 0;
+  font-weight: 900;
+  font-size: 10px;
 }
 
 .hero-area {
