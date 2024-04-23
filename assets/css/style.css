@@ -140,6 +140,7 @@
   --bee-bg-1: #23252D;
   --bee-bg-2: #FFFBF4;
   --bee-bg-3: #FBF6EF;
+  --bee-bg-4: #001C52;
   --bee-text-body: #57595C;
   --bee-text-p: #57595C;
   --bee-text-cta: #B1B4BA;
@@ -149,6 +150,7 @@
   --bee-theme-2: #FFE815;
   --bee-border-1: rgba(255, 255, 255, 0.15);
   --bee-border-2: #57595C;
+  --bee-border-3: #2F446B;
   /**
   @font weight declaration
   */
@@ -172,6 +174,7 @@
   --bee-fz-h4: 18px;
   --bee-fz-h5: 16px;
   --bee-fz-h6: 14px;
+  --bee-fz-special: 100px;
 }
 
 .bee-btn {
@@ -268,6 +271,31 @@
 }
 .bee-service-btn:hover:after {
   color: var(--bee-common-white);
+}
+
+.bee-portfolio-btn {
+  font-family: var(--bee-ff-heading);
+  font-size: var(--bee-fz-h2);
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 50px 75px;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.bee-portfolio-btn:hover {
+  color: var(--bee-theme-2);
+  border-color: var(--bee-theme-2);
 }
 
 .bee-section-title h2 {
@@ -16702,6 +16730,45 @@ textarea {
   bottom: 25%;
   left: 35%;
   z-index: 1;
+}
+
+.bee-project-area {
+  background-color: var(--bee-bg-4);
+}
+
+.tab-button .nav-link {
+  font-family: var(--bee-ff-heading);
+  font-size: var(--bee-fz-special);
+  color: var(--bee-common-white);
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 35px;
+  border-bottom: 1px solid var(--bee-border-3);
+  -webkit-transition: all 0.3 ease-out 0s;
+  -moz-transition: all 0.3 ease-out 0s;
+  -ms-transition: all 0.3 ease-out 0s;
+  -o-transition: all 0.3 ease-out 0s;
+  transition: all 0.3 ease-out 0s;
+}
+.tab-button .nav-link:hover {
+  color: var(--bee-theme-2);
+  border-color: var(--bee-theme-2);
+}
+.tab-button .nav-link.active {
+  color: var(--bee-theme-2);
+  border-color: var(--bee-theme-2);
+}
+
+.bee-project-image img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .bee-service-area {

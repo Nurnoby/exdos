@@ -75,3 +75,20 @@
     }
 
 }
+
+.bee-portfolio-btn{
+    font-family: var(--bee-ff-heading);
+    font-size: var(--bee-fz-h2);
+    line-height: 1;
+    color:rgba(255,255,255, .30);
+    padding:50px 75px;
+    display: inline-block;
+    background-color: transparent;
+    border:2px solid rgba(255,255,255, .30);
+    @include border-radius(50%);
+    @include transition (.3s);
+    &:hover{
+        color: var(--bee-theme-2);
+        border-color: var(--bee-theme-2);
+    }
+}
