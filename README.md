@@ -13,5 +13,4 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
 <li>Newsletter Section Updated</li>
 <li>Font Awesome 6 Added</li>
 <li>Service Section Added</li>
-<li>Service Section  Added by Sagor</li>
 </ul>
