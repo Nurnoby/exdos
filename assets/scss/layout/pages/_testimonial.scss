@@ -1,1 +1,64 @@
 @use '../../utils' as *;
+
+.bee-testimonial{
+    &-container{
+        text-align: center;
+    } 
+    &-text{
+        & h3{
+            font-size: 100px;
+            margin-bottom: 40px;           
+        }
+    }
+    &-author{
+        &-name{          
+            font-size: 30px;            
+        }
+        &-title{ 
+            color: var(--bee-text-body);          
+            font-size:17px; 
+            margin-left: 50px;
+            & span{
+                height: 1px;
+                width: 60px;
+                background-color: var(--bee-text-body);
+                display: inline-block;  
+                margin-right: 5px;
+                @include transform (translateY(-5px));             
+            }      
+        }
+    }
+    &-quote{
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        @include transform( translate(-50%, -50%));
+        z-index: -1;
+    }
+}
+
+.bee-slider{
+    &-nav{
+        position: absolute;
+        left: -100px;
+        top: 35%;
+      }
+        &-next{
+            left:auto;
+            right: -100px;
+            top: 35%;
+        }
+}   
+
+.bee-testimonial{
+    &-thumb{
+        position: absolute;
+        left: 0;
+        top: 22%;
+    }
+    &-thumb_2{
+        left: auto;
+        right: 0;
+        top: 4%;
+    }
+}
