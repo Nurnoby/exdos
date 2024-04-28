@@ -45,3 +45,15 @@
 .bee-blue-bg{
 	background-color: var(--bee-theme-1);
 }
+.bee-yellow-bg{
+	background-color: var(--bee-theme-2);
+}
+
+.bee-slide-transition{
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.bee-brand-slide-element{
+	width: auto;
+	display: inline-block;
+}

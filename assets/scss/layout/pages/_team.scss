@@ -1,1 +1,63 @@
 @use '../../utils' as *;
+.bee-team{
+    &-thumb{
+        margin-bottom: 30px;
+        & img{
+            width: 100%;
+            @include border-radius (20px);
+        }
+        
+    }
+    &-info{
+        & h4{
+            font-size: var(--bee-fz-h3);      
+            color: var(--bee-heading-primary);      
+        }
+        & span{
+            font-size: 17px;
+            color: var(--bee-text-body);   
+            margin-left: 50px;         
+            & i{               
+                width: 60px;
+                height: 1px;
+                background-color: #D6D6D1;  
+                display: inline-block;       
+                margin-right: 10px;   
+                margin-bottom: 5px;              
+               
+            }
+        }
+    }
+    &-social{
+        & ul {
+            list-style: none;
+            & li{
+                display: inline-block;                        
+                & a{
+                    font-family: var(--bee-ff-fontawesome);
+                    font-size: 25px;
+                    font-weight: 400;
+                    color:var(--bee-heading-primary);
+                    padding-right:18px;
+                    @include transition(.3s);
+                    &:hover{
+                        color: var(--bee-theme-1);
+                    }
+                }
+            }
+        }
+    }
+    &-nav{
+        & .button{
+            display: inline-block;
+        }    
+        & span{
+            display: inline-block;   
+            margin: 0 6px;         
+            width: 12px;
+            height: 12px;
+           @include border-radius(100%);
+           background-color: #DBDBDB;
+        }    
+    }
+}

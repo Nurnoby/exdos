@@ -541,6 +541,20 @@ textarea {
   background-color: var(--bee-theme-1);
 }
 
+.bee-yellow-bg {
+  background-color: var(--bee-theme-2);
+}
+
+.bee-slide-transition {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.bee-brand-slide-element {
+  width: auto;
+  display: inline-block;
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
@@ -16827,6 +16841,71 @@ textarea {
   margin-left: 0;
   font-weight: 900;
   font-size: 10px;
+}
+
+.bee-team-thumb {
+  margin-bottom: 30px;
+}
+.bee-team-thumb img {
+  width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+.bee-team-info h4 {
+  font-size: var(--bee-fz-h3);
+  color: var(--bee-heading-primary);
+}
+.bee-team-info span {
+  font-size: 17px;
+  color: var(--bee-text-body);
+  margin-left: 50px;
+}
+.bee-team-info span i {
+  width: 60px;
+  height: 1px;
+  background-color: #D6D6D1;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.bee-team-social ul {
+  list-style: none;
+}
+.bee-team-social ul li {
+  display: inline-block;
+}
+.bee-team-social ul li a {
+  font-family: var(--bee-ff-fontawesome);
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--bee-heading-primary);
+  padding-right: 18px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.bee-team-social ul li a:hover {
+  color: var(--bee-theme-1);
+}
+.bee-team-nav .button {
+  display: inline-block;
+}
+.bee-team-nav span {
+  display: inline-block;
+  margin: 0 6px;
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #DBDBDB;
 }
 
 .bee-testimonial-container {

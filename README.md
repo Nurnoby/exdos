@@ -15,4 +15,6 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
     <li>Service Section Added</li>
     <li>Portfolio Section Added</li>
     <li>Testimonial Section Added</li>
+    <li>Brand Slider Section Added</li>
+    <li>Team Section Added</li>
 </ul>
