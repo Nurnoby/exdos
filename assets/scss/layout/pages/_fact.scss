@@ -1,1 +1,25 @@
 @use '../../utils' as *;
+.bee-fact{
+    &-area{
+        @include background;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-content{
+        & .bee-fact-title{
+            color: var(--bee-common-white);
+            opacity: .5;
+            margin-bottom: 25px;
+        }
+        & span{
+            font-size: 100px;
+            line-height: 1;
+            color:var(--bee-common-white);          
+
+        }
+    }
+
+}

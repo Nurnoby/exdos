@@ -1,7 +1,5 @@
 @use '../../utils' as *;
-.bee-project-area{
-    background-color: var(--bee-bg-4);
-}
+
 .tab-button{
     & .nav-link{
         font-family: var(--bee-ff-heading);

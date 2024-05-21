@@ -42,11 +42,14 @@
 .p-absolute{
 	position: absolute;
 }
-.bee-blue-bg{
-	background-color: var(--bee-theme-1);
+.bee-primary-bg{
+	background-color: var(--bee-bg-4);
 }
 .bee-yellow-bg{
 	background-color: var(--bee-theme-2);
+}
+.bee-cream-bg{
+	background-color: #FBF6EF;
 }
 
 .bee-slide-transition{

@@ -1,0 +1,36 @@
+@use '../../utils' as *;
+
+.bee-award{
+    border-bottom: 1px solid var(--bee-border-2);
+    padding: 35px 0;
+    &-wrapper{
+        padding-right: 80px;
+        & .row{
+            & .col-xl-6:nth-child(even){
+                & .bee-award{
+                    border-left: 1px solid var(--bee-border-2);
+                    padding-left: 56px;
+                }
+            }
+        }
+        & .col-xl-6:nth-last-child(-n+2){
+            & .bee-award{
+              padding-bottom: 0;
+              border-bottom: 0;
+            }
+        }
+    }
+    & span{
+        color: var(--bee-text-body);
+        font-size: 20px;
+        font-weight: var(--bee-fw-normal);
+        line-height: 1;
+        
+
+    }
+    &-title{
+        color:var(--bee-heading-primary);
+        padding-top: 10px;
+        margin: 0;
+    }
+}

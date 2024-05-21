@@ -56,3 +56,17 @@
       });
 
 })(jQuery);
+
+	////////////////////////////////////////////////////
+	// 07. Data CSS Js
+	$("[data-background").each(function () {
+		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
+	});
+	
+	$("[data-width]").each(function () {
+		$(this).css("width", $(this).attr("data-width"));
+	});
+
+	$("[data-bg-color]").each(function () {
+        $(this).css("background-color", $(this).attr("data-bg-color"));
+    });
