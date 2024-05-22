@@ -1,0 +1,39 @@
+@use '../../utils' as *;
+.bee-blog{
+    &-thumb{
+        & img{
+            @include border-radius(20px);
+        }
+    }
+    &-content{
+        padding:0 30px 30px;
+    }
+    &-meta{
+        & i{
+            font-family: var(--bee-ff-fontawesome);
+            font-size: 17px;
+            color: var(--bee-text-body);
+            margin-right: 8px;
+        }
+        & a{
+            font-family: var(--bee-ff-body);
+            font-size: 17px;
+            color: var(--bee-text-body);
+            line-height: 28px;
+        }
+        & cite{
+            width: 2px;
+            height: 16px;
+            display: inline-block;
+            background-color: var(--bee-text-body);
+            margin-bottom: -2px;
+            margin-left:15px;
+            margin-right:15px;
+        }
+    }
+    &-title{
+        font-size: 30px;
+        padding-top:15px;
+        padding-bottom: 30px;
+    }
+}

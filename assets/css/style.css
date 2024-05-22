@@ -298,6 +298,23 @@
   border-color: var(--bee-theme-2);
 }
 
+.bee-blog-btn a {
+  font-family: var(--bee-ff-heading);
+  font-size: var(--bee-fz-body);
+  text-transform: capitalize;
+  color: var(--bee-heading-primary);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  display: inline-block;
+}
+.bee-blog-btn a i {
+  padding-left: 8px;
+  font-size: 18px;
+}
+
 .bee-section-title h2 {
   color: var(--bee-heading-primary);
   text-transform: capitalize;
@@ -17152,6 +17169,43 @@ textarea {
   font-size: 100px;
   line-height: 1;
   color: var(--bee-common-white);
+}
+
+.bee-blog-thumb img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+.bee-blog-content {
+  padding: 0 30px 30px;
+}
+.bee-blog-meta i {
+  font-family: var(--bee-ff-fontawesome);
+  font-size: 17px;
+  color: var(--bee-text-body);
+  margin-right: 8px;
+}
+.bee-blog-meta a {
+  font-family: var(--bee-ff-body);
+  font-size: 17px;
+  color: var(--bee-text-body);
+  line-height: 28px;
+}
+.bee-blog-meta cite {
+  width: 2px;
+  height: 16px;
+  display: inline-block;
+  background-color: var(--bee-text-body);
+  margin-bottom: -2px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.bee-blog-title {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

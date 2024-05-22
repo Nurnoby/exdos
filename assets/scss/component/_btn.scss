@@ -94,3 +94,19 @@
         }
     }    
 }
+
+.bee-blog-btn{
+    & a{
+        font-family: var(--bee-ff-heading);
+        font-size: var(--bee-fz-body);
+        text-transform: capitalize;         
+        color: var(--bee-heading-primary);       
+        @include transition(.3s); 
+        display: inline-block;
+        & i{
+            padding-left: 8px;
+            font-size: 18px
+        }
+    }
+    
+}
