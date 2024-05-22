@@ -19,4 +19,7 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
     <li>Team Section Added</li>
     <li>Award Section Added</li>
     <li>Fact Section Added</li>
+    <li>Blog Section Added</li>
+    <li>Contact Section Added</li>
+    <li>Footer Section Added</li>
 </ul>

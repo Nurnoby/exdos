@@ -1,1 +1,15 @@
 @use '../../utils' as *;
+.bee-contact-area{
+    & .bee-section-title{
+        & h2{
+            font-size: var(--bee-fz-special);
+        }
+    }
+
+}
+
+.bee-form-wrapper{ 
+    & input, & textarea{
+        border-bottom: 1px solid var(--bee-border-2);
+    }
+}

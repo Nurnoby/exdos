@@ -311,13 +311,13 @@ textarea{
 
 *::-moz-placeholder {
 	text-transform: uppercase;
-	color: var(--bee-common-black);
-	font-size: 14px;
+	color: var(--bee-text-body);
+	font-size: 15px;
 	opacity: 1;
 }
 *::placeholder {
 	text-transform: uppercase;
-	color: var(--bee-common-black);
-	font-size: 14px;
+	color: var(--bee-text-body);
+	font-size: 15px;
 	opacity: 1;
 }
