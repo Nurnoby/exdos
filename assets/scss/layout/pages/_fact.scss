@@ -1,5 +1,16 @@
 @use '../../utils' as *;
 .bee-fact{
+    &-icon{
+        line-height: 0;
+    
+        & i{
+            font-family: var(--bee-ff-flaticon);
+            font-size: 130px;
+            display: inline-block;
+            line-height: 0 !important;
+            color: var(--bee-theme-2);
+        }
+    }
     &-area{
         @include background;
     }

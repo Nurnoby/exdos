@@ -21,9 +21,13 @@
         }
     }
     & .bee-service{
-        &-icon img{
-            height: 92px;
+        &-icon i{           
+            font-family: var(--bee-ff-flaticon);
+            color: var(--bee-heading-primary);      
+            font-size: 100px;
+            line-height: 0;
             margin-bottom: 30px;
+            display: inline-block;
         }
 
         &-content{

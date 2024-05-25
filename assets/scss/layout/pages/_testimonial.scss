@@ -39,16 +39,27 @@
 
 .bee-slider{
     &-nav{
+        font-family: var(--bee-ff-flaticon);
+        font-size: 50px;
+        line-height: 0;
+        color: var(--bee-text-body);
         position: absolute;
         left: -100px;
         top: 35%;
-      }
+        @include transition(.3s);
+        &:hover{
+            color: var(--bee-theme-1);
+        }
+    }
         &-next{
             left:auto;
             right: -100px;
             top: 35%;
         }
 }   
+.bee-nav-rotate{
+    @include transform (rotate(-180deg));
+}
 
 .bee-testimonial{
     &-thumb{

@@ -30,6 +30,18 @@
                     line-height:28px;
                     padding: 36px 0;                    
                     display: block;
+                    position: relative;
+                    &:before{
+                        content: "\f121";
+                        font-family: var(--bee-ff-flaticon);
+                        color: var(--bee-theme-2);
+                        font-size: 40px;
+                        position: absolute;
+                        top: -15px;
+                        left: 40px;
+                        opacity: 0;
+                        @include transition(.3s);                
+                    }
 
                 }
                 &:last-child{
@@ -53,12 +65,16 @@
                         & a{
                             color:var(--bee-common-black);
                             padding: 4px 25px;
+                            &:before{
+                                opacity: 0;
+                            }  
                         }
                         & .sub-menu{
                             left: 90%;
                             top:0;
                             opacity: 0;
-                            visibility: hidden;                            
+                            visibility: hidden;     
+                  
                         }
                         &:hover{
                             & > a{
@@ -75,6 +91,11 @@
                 &:hover{
                     & a{
                         color:var(--bee-theme-2);
+                        &:before{
+                            opacity: 1;
+                            top:0;
+                            left: 30px;
+                        }
                     }
                     & .sub-menu{
                         top: 100%;
@@ -94,41 +115,71 @@
 
 .bee-header{
     &-search{
+        line-height: 0;
         padding:0 30px;
+        & i{
+            font-size: 30px;
+            line-height: 0;
+            display: block;
+            color: var(--bee-text-cta);
+            @include transition(.3s);
+            &:hover{
+                color:var(--bee-theme-2);
+            }
+        }
     }
     &-cta{
         @include flexbox();        
         align-items: center;
         border-left:1px solid var(--bee-border-1);
-        padding:24px 40px;
+        padding:27px 30px;
         &-icon{
             margin-right: 14px;
-            & img{
-                height: 100%;
+            & i{
+                font-size: 45px;
+                line-height: 0;
+                display: block;
+                color: var(--bee-theme-2);
             }
         }
         &-text{
             display: block;
+            line-height: 0;
             & span{
                 font-size: var(--bee-fz-cta);
                 font-family: var(--bee-ff-body);
                 font-weight: var(--bee-fw-regular);            
-                color: var(--bee-text-cta);
-                margin-bottom: 10px;
+                color: var(--bee-text-cta);                
                 line-height: 1;
             }
             & h4{        
                 font-size: var(--bee-fz-h4);                           
                 color: var(--bee-common-white);                
-                line-height: 1;                        
+                line-height: 1;     
+                padding-top: 10px;   
+                margin: 0;                
             }
         }
     }
     &-humberger{
         & button{
-            background-color: var(--bee-bg-1);
-            padding: 37px 23px;
-            line-height: 1;
+            background-color:#23252D;
+            padding: 19px 23px;
+            @include transition(.3s);
+            & i{
+                font-size: 55px;
+                color: var(--bee-common-white);
+                line-height: 0;
+                display: inline-block;         
+                @include transition(.3s);          
+                @include transform(rotate(180deg)); 
+            }
+            &:hover{
+                background-color: var(--bee-theme-2);
+                & i{                    
+                    color: var(--bee-heading-primary);
+                }              
+            }
         }
     }
 
