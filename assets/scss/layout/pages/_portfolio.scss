@@ -11,6 +11,9 @@
         padding-right: 35px;
         border-bottom: 1px solid var(--bee-border-3);
         @include transition(.3);
+        @media #{$xxl}{
+            font-size: 95px;
+        }
         &:hover{
             color: var(--bee-theme-2);
             border-color: var(--bee-theme-2);

@@ -4,14 +4,42 @@
     background-color: var(--bee-bg-2);   
     @include background;
     overflow: hidden;
+    @media #{$md}{
+        padding-bottom: 220px;        
+    }
+    @media #{$xs}{
+        padding-bottom: 180px;        
+    }
 }
-
+.bee-about-container{
+    @media #{$md}{
+        padding-left: 10px;        
+    }
+    @media #{$xs}{
+        padding-left: 0;        
+    }
+}
 .bee-about-feature{
     & img{
         @include border-radius(20px);
+        width:100%;        
+        @media #{$xs}{
+            margin-bottom: 30px;  
+        }
     }
 }
 .bee-video-box{
+    @media #{$xl,$lg}{
+        padding-left: 40px;        
+    }
+    @media #{$md}{
+        padding-left: 0;   
+        padding-top: 0;;     
+    }
+    @media #{$xs}{
+        padding-left: 0;   
+        padding-top: 0;;     
+    }
     & .bee-video-info{
         display: flex;
         align-items: center;
@@ -37,11 +65,18 @@
         top:20%;
         left: 0;
         z-index: 1;
+        @media #{$md}{
+            top:15%;
+            left: -180px;      
+        }
     }
     & .shape-2{
         top:-3%;
         right: -10%;
         z-index: 1;
+        @media #{$md}{
+            right: -30%;    
+        }
     }
     & .shape-3{
         bottom: 25%;

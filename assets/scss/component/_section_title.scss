@@ -5,7 +5,15 @@
 
     & h2{
         color: var(--bee-heading-primary);
-        text-transform: capitalize;  
+        text-transform: capitalize;
+        @media #{$md,$xs}{
+            font-size:38px;      
+        }
+        & br{
+            @media #{$xl,$lg,$md,$xs}{
+                display: none;
+            }
+        }
     }
     &-white{
         & h2{
@@ -14,6 +22,11 @@
     }
     & p{
         color: var(--bee-text-body);       
+        & br{
+            @media #{$xs}{
+                display: none;    
+            }
+        }
     }
 
 }
