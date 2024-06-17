@@ -22,7 +22,7 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
     <li>Blog Section Added</li>
     <li>Contact Section Added</li>
     <li>Footer Section Added</li>
-    <li>Responsive Done</li>
+    <li>Responsive Done Upto Testimonial</li>
     
 
 </ul>

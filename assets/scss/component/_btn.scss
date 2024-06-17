@@ -80,6 +80,13 @@
     & a{
         font-family: var(--bee-ff-heading);
         font-size: var(--bee-fz-h2);
+        @media #{$xl, $lg, $md}{
+            font-size: 45px;
+         }
+        @media #{$xs}{
+            font-size: 35px;
+            padding: 40px 55px;
+         }
         line-height: 1;
         color:rgba(255,255,255, .30);
         padding:50px 75px;

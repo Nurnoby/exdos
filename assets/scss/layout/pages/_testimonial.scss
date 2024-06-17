@@ -1,13 +1,33 @@
 @use '../../utils' as *;
 
 .bee-testimonial{
+    &-item{
+       @media #{$xxl} {
+        padding:0 80px;        
+       }
+    }
     &-container{
         text-align: center;
     } 
     &-text{
         & h3{
             font-size: 100px;
-            margin-bottom: 40px;           
+            margin-bottom: 40px; 
+            @media #{$xxl} {
+                font-size: 85px;   
+            }          
+            @media #{$xl} {
+                font-size: 85px;   
+            }          
+            @media #{$lg} {
+                font-size: 65px;   
+            }          
+            @media #{$md} {
+                font-size: 60px;   
+            }          
+            @media #{$xs} {
+                font-size: 35px;   
+            }          
         }
     }
     &-author{
@@ -29,6 +49,24 @@
         }
     }
     &-quote{
+        font-size: 600px;
+        @media #{$xxl} {
+            font-size: 500px;   
+        }   
+        @media #{$xl} {
+            font-size: 450px;   
+        }   
+        @media #{$lg} {
+            font-size: 410px;   
+        }     
+        @media #{$md} {
+            font-size: 380px;   
+        }     
+        @media #{$xs} {
+            font-size: 330px;
+            top: 50%;
+        }     
+        color: #F5F5F5;
         position: absolute;
         top: 53%;
         left: 50%;
@@ -45,6 +83,25 @@
         color: var(--bee-text-body);
         position: absolute;
         left: -100px;
+        @media #{$xxl} {
+            left: -20px;
+        }  
+        @media #{$xl} {
+            left: 0;
+            bottom: -60px            
+        }  
+        @media #{$lg} {
+            left: 62px;
+            bottom: 0;        
+        }  
+        @media #{$md} {
+            left: 15px;
+            bottom: 35px;        
+        }  
+        @media #{$xs} {
+            left: 35%;
+            bottom: -55px;   
+        }  
         top: 35%;
         @include transition(.3s);
         &:hover{
@@ -55,6 +112,29 @@
             left:auto;
             right: -100px;
             top: 35%;
+            @media #{$xxl} {
+                right: -20px;
+            }   
+            @media #{$xl} {
+                right: auto;                
+                top: 102%;
+                left: 60px;       
+            }  
+            @media #{$lg,$md} {
+                right: auto;
+                top: 88%;
+                left: 126px;      
+            }  
+            @media #{$md} {
+                right: auto;
+                top: 79%;
+                left: 75px;
+            }   
+            @media #{$xs} {
+                right: auto;
+                top: 100%;
+                left: 50%;
+            }   
         }
 }   
 .bee-nav-rotate{
@@ -66,10 +146,22 @@
         position: absolute;
         left: 0;
         top: 22%;
+        @media #{$xxl} {
+            left: 50px;
+        } 
+        @media #{$lg,$md,$xs} {
+            display: none;    
+        }   
     }
     &-thumb_2{
         left: auto;
         right: 0;
         top: 4%;
+        @media #{$xxl} {
+            right: 50px;
+        }   
+        @media #{$lg,$md,$xs} {
+            display: none;    
+        }   
     }
 }

@@ -1,5 +1,9 @@
 @use '../../utils' as *;
 
+#portfolio-tab{
+    justify-content: center;
+    margin-bottom: 30px;
+}
 .tab-button{
     & .nav-link{
         font-family: var(--bee-ff-heading);
@@ -11,8 +15,23 @@
         padding-right: 35px;
         border-bottom: 1px solid var(--bee-border-3);
         @include transition(.3);
-        @media #{$xxl}{
+        @media #{$xxl, $xl}{
             font-size: 95px;
+        }
+        @media #{$xl}{
+            font-size: 70px;
+        }
+        @media #{$lg}{
+            font-size: 60px;
+            padding-left: 60px;
+        }
+        @media #{$md} {
+            font-size: 30px;
+            padding: 15px 20px;            
+        }
+        @media #{$xs} {
+            font-size: 18px;
+            padding: 10px 15px;         
         }
         &:hover{
             color: var(--bee-theme-2);
@@ -24,10 +43,30 @@
         }
     }
 }
+.tab-content{
+    @media #{$lg}{      
+        padding-right: 60px;
+    }
+    @media #{$md, $xs}{      
+        padding: 0 50px;
+    }
+}
 .bee-project-image{
     & img{
         width: 100%;
         height: 650px;
+        @media #{$xl}{
+            height: 550px;
+        }
+        @media #{$lg}{
+            height: 480px;
+        }
+        @media #{$md}{
+            height: 450px;
+        }
+        @media #{$xs}{
+            height: 350px;
+        }
         object-fit: cover;
         @include border-radius(20px);
     }
