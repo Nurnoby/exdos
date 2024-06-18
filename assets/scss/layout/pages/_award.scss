@@ -5,11 +5,22 @@
     padding: 35px 0;
     &-wrapper{
         padding-right: 80px;
+        @media #{$lg, $md, $xs}{
+            padding-right: 0;
+            margin-top: 30px;
+        }    
         & .row{
             & .col-xl-6:nth-child(even){
                 & .bee-award{
                     border-left: 1px solid var(--bee-border-2);
                     padding-left: 56px;
+                    @media #{$xl}{
+                        padding-left: 25px;
+                    }
+                    @media #{$xs}{
+                        padding-left: 0;
+                        border-left: 0;
+                    }
                 }
             }
         }
@@ -17,6 +28,16 @@
             & .bee-award{
               padding-bottom: 0;
               border-bottom: 0;
+              @media #{$xs}{
+               border-bottom: 1px solid var(--bee-border-2);
+               padding-bottom: 35px;
+            }
+            }
+        }
+        & .col-xl-6:last-child{
+            & .bee-award{
+                border-bottom: 0;
+                padding-bottom: 0;
             }
         }
     }

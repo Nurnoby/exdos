@@ -3,6 +3,20 @@
     & .bee-section-title{
         & h2{
             font-size: var(--bee-fz-special);
+            @media #{$xl}{
+                font-size: 85px;
+            }
+            @media #{$lg}{
+                font-size: 60px;
+            }
+            @media #{$md}{
+                font-size: 85px;
+                margin-bottom: 35px;
+            }
+            @media #{$xs}{
+                font-size: 60px;
+                margin-bottom: 35px;
+            }
         }
     }
 

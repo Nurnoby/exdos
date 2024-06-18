@@ -6,23 +6,7 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
 
 <h1>Changes Log:</h1>
 <ul>
-    <li>Header Completed for Main Home Page</li>
-    <li>Hero Section Updated</li>
-    <li>Hero Section Chrome Error Fixed</li>
-    <li>About Section Updated</li>
-    <li>Newsletter Section Updated</li>
-    <li>Font Awesome 6 Added</li>
-    <li>Service Section Added</li>
-    <li>Portfolio Section Added</li>
-    <li>Testimonial Section Added</li>
-    <li>Brand Slider Section Added</li>
-    <li>Team Section Added</li>
-    <li>Award Section Added</li>
-    <li>Fact Section Added</li>
-    <li>Blog Section Added</li>
-    <li>Contact Section Added</li>
-    <li>Footer Section Added</li>
-    <li>Responsive Done Upto Testimonial</li>
+    <li>Home-1 Completed with Responsive</li>
     
 
 </ul>

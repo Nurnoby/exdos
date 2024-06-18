@@ -41,8 +41,7 @@
       });
 
     // team-slider 
-    var swiper = new Swiper(".bee-team-active", {  
-        slidesPerView: '4',
+    var swiper = new Swiper(".bee-team-active", {         
         spaceBetween:30,   
         loop: true,                 
         autoplay: {
@@ -52,6 +51,24 @@
         navigation: {
           nextEl: ".bee-team-next",
           prevEl: ".bee-team-prev",          
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
         },
       });
 

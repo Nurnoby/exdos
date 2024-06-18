@@ -19,14 +19,30 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    &-item{
+        @media #{$md}{
+            text-align: center;
+            width: 50%;
+        }
+        @media #{$xs}{
+            text-align: center;
+            width: 100%;
+        }
+    }
     &-content{
         & .bee-fact-title{
             color: var(--bee-common-white);
             opacity: .5;
             margin-bottom: 25px;
+            @media #{$lg,$md, $xs}{
+                font-size: 25px;
+            }
         }
         & span{
             font-size: 100px;
+            @media #{$lg,$md, $xs}{
+                font-size: 85px;
+            }
             line-height: 1;
             color:var(--bee-common-white);          
 

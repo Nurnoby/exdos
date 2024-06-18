@@ -1,5 +1,23 @@
 @use '../../utils' as *;
 .bee-team{
+    &-area{
+        & .bee-section-title{
+            padding-right: 100px;
+            @media #{$lg,$md,$xs}{
+                padding-right: 0;                
+            }
+        }
+    }
+    &-item-area{
+        @media #{$xxl, $xl}{
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+        @media #{$xs}{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
     &-thumb{
         margin-bottom: 30px;
         & img{
@@ -9,14 +27,31 @@
         
     }
     &-info{
-        & h4{
+        @media #{$md}{         
+           padding-right: 15px;
+        }
+        & h3{
             font-size: var(--bee-fz-h3);      
-            color: var(--bee-heading-primary);      
+            color: var(--bee-heading-primary);    
+            @media #{$lg}{                
+                font-size: 22px;
+            }
+            @media #{$md}{         
+                text-align: right;       
+                font-size: 22px;
+            }
         }
         & span{
             font-size: 17px;
             color: var(--bee-text-body);   
-            margin-left: 50px;         
+            margin-left: 50px;     
+            @media #{$lg, $md, $xs}{
+                margin-left: 0;
+            }    
+            @media #{$md}{
+                text-align: right;
+                display: block;
+             } 
             & i{               
                 width: 60px;
                 height: 1px;
@@ -31,8 +66,16 @@
     &-social{
         & ul {
             list-style: none;
+            @media #{$md}{
+               text-align: right;
+            }    
             & li{
-                display: inline-block;                        
+                display: inline-block;        
+                &:last-child{
+                    & a{
+                        padding-right: 0;
+                    }
+                }                
                 & a{
                     font-family: var(--bee-ff-fontawesome);
                     font-size: 25px;

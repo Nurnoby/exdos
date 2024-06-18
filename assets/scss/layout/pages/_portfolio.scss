@@ -1,9 +1,12 @@
 @use '../../utils' as *;
 
 #portfolio-tab{
-    justify-content: center;
-    margin-bottom: 30px;
+    @media #{$md , $xs}{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 }
+
 .tab-button{
     & .nav-link{
         font-family: var(--bee-ff-heading);

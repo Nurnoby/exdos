@@ -1,11 +1,22 @@
 @use '../../utils' as *;
 .bee-footer{
+    &-logo{
+        @media #{$xs}{
+            text-align: center;
+            padding-bottom: 15px;
+        }
+    }
     &-sep{
         height: 1px;
         background-color:#ffffff;
         opacity: .15;
     }
     &-social{
+        @media #{$xs}{               
+            text-align: center; 
+            padding-top: 15px;     
+            margin: 0;   
+        }
         & a{
             color: var(--bee-common-white);
             font-family: var(--bee-ff-fontawesome);
@@ -72,18 +83,27 @@
         & p{
             font-size: 17px;
             color: var(--bee-text-cta);
+            @media #{$md,$xs}{
+               text-align: center;
+            }
             & a{
                 color: var(--bee-theme-2);
             }
         }
     }
     &-menu{
+        @media #{$md,$xs}{
+            text-align: center !important;
+        }
         & ul{
             & li{
                 list-style: none;
                 display: inline-block;                
                 padding: 0 30px;
                 position: relative;
+                @media #{$xs}{
+                    padding: 0 10px;
+                }
                 &:before{
                     content: "";
                     position: absolute;
@@ -120,6 +140,19 @@
 .footer-widget-col{
     &-3{
         padding-left: 60px;
+        @media #{$xl}{
+            padding-left: 20px;
+        }
+        @media #{$lg}{
+            padding-left: 30px;
+        }
+        @media #{$md}{
+            padding-left: 10px;
+        }
+        @media #{$xs}{
+            margin-top: 20px;
+            padding-left: 0;
+        }
         position: relative;
         &:before, &:after{
             content: "";
@@ -130,14 +163,29 @@
             opacity: .15;
             top:0;
             left: -40px;
+            @media #{$md}{
+                left: -20px;
+            }
+            @media #{$xs}{
+                display: none;
+            }
         }
         &:after{
             left: auto;
             right: 35px;
+            @media #{$md}{
+                right: 0;
+            }
         }
     }
     &-4{
         padding-left: 35px;      
+        @media #{$xl,$lg, $md, $xs}{
+            margin-top: 20px;
+            padding-left: 0;
+        }
+
+
     }
     
 }
@@ -146,17 +194,47 @@
     &-1{
         left: 17%;
         top:42%;
+        z-index: -1;
+        @media #{$md} {
+            left: 0;
+            top: 50%;            
+        }
+        @media #{$xs} {
+            display: none;         
+        }
     }
     &-2{
         left: 46%;
         top: 16%;
+        z-index: -1;
+        @media #{$md} {
+            left: 20%;
+            top: 15%;           
+        }
+        @media #{$xs} {
+            display: none;         
+        }
     }
     &-3{
         right: 7%;
         top:7%;
+        z-index: -1;
+        @media #{$md} {
+            right: 10%;
+        }
+        @media #{$xs} {
+            display: none;         
+        }
     }
     &-4{
         right: 12%;
         bottom: 9%;
+        z-index: -1;
+        @media #{$md} {
+           bottom: 30%;
+        }
+        @media #{$xs} {
+            display: none;         
+        }
     }
 }

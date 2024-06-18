@@ -7,6 +7,10 @@
     }
     &-content{
         padding:0 30px 30px;
+        @media #{$xl ,$lg, $md}{
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     &-meta{
         & i{
@@ -35,5 +39,9 @@
         font-size: 30px;
         padding-top:15px;
         padding-bottom: 30px;
+        @media #{$xl, $lg, $md, $xs}{
+            font-size: 25px; 
+            padding-bottom: 20px;
+        }
     }
 }
