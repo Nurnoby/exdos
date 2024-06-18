@@ -183,6 +183,9 @@
             }
         }
     }
+    &-btn{
+        display: flex;
+    }
     &-humberger{
         & button{
             background-color:#23252D;

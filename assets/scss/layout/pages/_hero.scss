@@ -22,6 +22,14 @@
     @media #{$xxl,$xl,$lg,$md}{
         padding-left:100px;
     }
+    &-bg{
+        position: absolute;
+        width: 43%;
+        height: calc(100% - 100px);     
+        right: 0;
+        bottom: 0;
+       @include background;
+    }
     &-title{
         color:var(--bee-common-white);
         text-transform: uppercase;
@@ -60,6 +68,41 @@
                 font-size: 20px;
                 margin-right: 50px;
             }               
+        }
+        &-2{
+            font-size: 100px;
+            margin-bottom: 60px;
+            & img{
+                padding-right: 40px;
+            }
+        }
+    }
+    &-descriptions{
+        display: flex;
+        align-items: center;
+        & p{
+            font-family: var(--bee-ff-heading);
+            font-size: 30px;
+            color: #B1B4BA;
+            line-height: 40px;
+            margin: 0;
+            margin-right: 60px;
+        }
+       
+    }
+    &-url-box{
+        display: flex;
+        align-items: center;
+        & .bee-hero-url-bg{
+            width: 30px;
+            height: 65px;
+            background-color: rgba(255,255,255,.20);
+        }
+        & i{
+            font-family: var(--bee-ff-flaticon);
+            font-size: 50px;
+            color: #B1B4BA;
+            margin-left: -18px;
         }
     }
     &-shape{

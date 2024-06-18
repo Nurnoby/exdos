@@ -7,6 +7,13 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
 <h1>Changes Log:</h1>
 <ul>
     <li>Home-1 Completed with Responsive</li>
+    <li>Home-2:
+        <ul>
+             <li>Header Done</li>
+             <li>Hero Done</li>
+             <li>Services with section title Done</li>
+        </ul>
+    </li>
     
 
 </ul>
