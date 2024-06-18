@@ -10,6 +10,14 @@
             line-height: 0 !important;
             color: var(--bee-theme-2);
         }
+        &-2{
+            & i{
+                font-family: var(--bee-ff-flaticon);
+                font-size: 130px;
+                display: inline-block;
+                line-height: 0 !important;
+            }
+        }
     }
     &-area{
         @include background;
@@ -37,6 +45,10 @@
             @media #{$lg,$md, $xs}{
                 font-size: 25px;
             }
+            &-2{                
+                margin-bottom: 25px;
+                color: var(--bee-heading-primary);
+            }
         }
         & span{
             font-size: 100px;
@@ -46,6 +58,20 @@
             line-height: 1;
             color:var(--bee-common-white);          
 
+        }
+        &-2{
+            & .bee-fact-title{
+                &-2{                
+                    margin-bottom: 25px;
+                    color: var(--bee-heading-primary);
+                }
+            }
+            & span{
+                font-size: 100px;
+                color:var(--bee-heading-primary);   
+                line-height: 1;       
+    
+            }
         }
     }
 

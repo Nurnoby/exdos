@@ -1,7 +1,6 @@
 @use '../../utils' as *;
 
 .bee-about-area{
-    background-color: var(--bee-bg-2);   
     @include background;
     overflow: hidden;
     @media #{$md}{
@@ -9,6 +8,9 @@
     }
     @media #{$xs}{
         padding-bottom: 180px;        
+    }
+    &-2{
+        overflow: visible;
     }
 }
 .bee-about-container{
@@ -82,5 +84,43 @@
         bottom: 25%;
         left: 35%;
         z-index: 1;
+    }
+}
+
+.bee-about{
+    &-content{
+        & p{
+            font-family: var(--bee-ff-body);
+            font-size: 17px;
+        }
+        & ul{
+            & li{
+                list-style: none;
+                font-family: var(--bee-ff-heading);
+                font-size: 30px;
+                font-weight: 400;
+                color: var(--bee-heading-primary);
+                margin-bottom: 30px;
+    
+                & i{
+                    font-family: var(--bee-ff-fontawesome);
+                    font-size: 30px;
+                    font-weight: 300;
+                    color: #000;
+                    margin-right: 10px;
+                }
+                
+            }
+        }
+
+    }  
+    
+    &-circle-img{
+        position: absolute;
+        top:0;
+        right: 185px;
+        & img{
+            max-width: inherit;
+        }        
     }
 }

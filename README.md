@@ -12,6 +12,9 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
              <li>Header Done</li>
              <li>Hero Done</li>
              <li>Services with section title Done</li>
+             <li>About Done</li>
+             <li>Fact Done</li>
+             <li>portfolio Done</li>
         </ul>
     </li>
     

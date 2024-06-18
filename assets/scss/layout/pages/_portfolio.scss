@@ -74,3 +74,43 @@
         @include border-radius(20px);
     }
 }
+
+.bee-project{
+    &-content{
+        position: absolute;
+        left: 12%;
+        bottom: 5%;
+        opacity: 0;
+        visibility: hidden;
+        @include transition (.3s);
+        & .project-category{
+            font-family: var(--bee-ff-body);
+            font-weight: 500;
+            font-size: 15px;
+            color: var(--bee-heading-primary);
+            text-transform: uppercase;
+            background-color: #ffffff;
+            padding:10px 20px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        & .project-title{
+            font-size: 30px;
+            color: var(--bee-heading-primary);
+            background-color: #ffffff;
+            padding:12px 22px;
+        }
+    }
+    &-item{
+        & img{
+            max-width: 100%;
+        }
+        &:hover{
+            & .bee-project-content{
+                visibility: visible;
+                opacity: 1;
+                bottom:10%;
+            }
+        }
+    }
+}
