@@ -121,6 +121,7 @@
         right: 185px;
         & img{
             max-width: inherit;
+            z-index: -1;
         }        
     }
 }
