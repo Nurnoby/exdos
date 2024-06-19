@@ -15,6 +15,7 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
              <li>About Done</li>
              <li>Fact Done</li>
              <li>portfolio Done</li>
+             <li>Cta video Done</li>
         </ul>
     </li>
     

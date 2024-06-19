@@ -17831,6 +17831,10 @@ img {
   bottom: 10%;
 }
 
+.bee-cta-video {
+  padding: 306px 0;
+}
+
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .bee-testimonial-item {
     padding: 0 80px;
