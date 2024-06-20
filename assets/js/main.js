@@ -24,6 +24,23 @@
         //   clickable: true,
         // },
       });
+    // testimonial slider 2
+    var swiper = new Swiper(".bee-slider-active", {  
+        slidesPerView: 1,
+        loop: true,                 
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },    
+        navigation: {
+          nextEl: ".bee-slider-next-2",
+          prevEl: ".bee-slider-prev-2",          
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+      });
 
     // brand-slider 
     var swiper = new Swiper(".bee-brand-active", {  
