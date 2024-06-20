@@ -44,4 +44,38 @@
             padding-bottom: 20px;
         }
     }
+
+    &-2{
+        border:1px solid var(--bee-border-2);
+        @include border-radius (20px);
+        position: relative;
+        margin-bottom: 30px;
+        & .bee-blog-thumb{
+            width: 200px;
+            flex: 0 0 auto;
+            @include transform (translateY(-12px));
+            margin-left: -1px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            object-fit: cover;
+            & img{
+                width: 100%;
+                height: calc(100% + 24px);
+                object-fit: cover;              
+            }
+
+        }
+        & .bee-blog{
+            &-content{
+                padding:30px;
+                padding-left: 225px;
+            }
+            &-title{
+                padding-bottom: 15px;
+            }
+
+        }
+    }
 }

@@ -49,6 +49,27 @@
                 color:var(--bee-common-white)
             }
         }
+        &-2{
+            & .bee-newsletter-input{
+                & i{
+                    color:var(--bee-text-body) ;
+                }
+            }
+            & input{
+                color: var(--bee-text-body);
+                border-color: var(--bee-border-2);
+                &::placeholder{
+                    text-transform: capitalize;
+                    color: var(--bee-text-body);
+                }
+                &:focus{
+                    border-color: var(--bee-border-2);
+                }
+            }
+            & .big-heading{
+                color: #EEEBE6;
+            }
+        }
     }
     &-input{   
         width: calc(100% - 205px);

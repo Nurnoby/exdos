@@ -115,5 +115,18 @@
             font-size: 18px
         }
     }
+    &-2{
+        & a{
+            font-family: var(--bee-ff-heading);
+            font-size: var(--bee-fz-body);
+            text-transform: capitalize;           
+            @include transition(.3s); 
+            display: inline-block;
+            color: var(--bee-text-body);   
+            &:hover{
+                color: var(--bee-theme-1);
+            }
+        }
+    }
     
 }
