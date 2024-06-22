@@ -2,8 +2,7 @@
 
 
 .hero-area{    
-    @include background;
-    background-color: var(--bee-heading-primary);
+    @include background;    
     overflow: hidden;
     @media #{$md}{
         padding-top: 220px;
@@ -76,8 +75,26 @@
                 padding-right: 40px;
             }
         }
+        &-black{
+            font-size: 100px;
+            color: var(--bee-heading-primary);
+            & span{
+                margin-left: 50px;
+                margin-right: 5px;
+                & img{
+                    @include transform (translateY(-12px));
+                }
+                
+            }
+        }
     }
     &-descriptions{
+        &-black{         
+            font-family: var(--bee-ff-body);
+            color: var(--bee-text-body);
+            font-size: 17px;
+            margin-left: 150px;   
+        }
         display: flex;
         align-items: center;
         & p{
@@ -160,6 +177,34 @@
             @media #{$xs}{
                display: none;
             }                     
+        }
+        &-home-3{
+            &-shape{
+                &-1{
+                    left: 50px;                   
+                    bottom: 150px;
+                    z-index: 2;
+                }
+                &-2{
+                    right: 100px;                   
+                    bottom: 55px;
+                    z-index: 2;
+                }
+                &-3{
+                    top:175px;
+                    right: 60px;
+            
+                }
+                &-4{
+                    left: 50px;
+                    top: 0;
+                    z-index: 1;
+                }
+                &-5{                                     
+                    top: 82px;
+                    right: 150px;
+                }
+            }
         }
     }
 }

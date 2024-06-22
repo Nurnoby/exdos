@@ -75,6 +75,16 @@
     }
 
 }
+.bee-service-btn-home3{
+    font-family: var(--bee-ff-flaticon);
+    font-size: 45px;
+    color:var(--bee-body-text);
+    @include transition (.3s);
+    display: inline-block;
+    &:hover{
+        color: var(--bee-theme-3);
+    }
+}
 
 .bee-portfolio-btn{
     & a{
@@ -129,4 +139,14 @@
         }
     }
     
+}
+.bee-hero-black-btn{
+    & a{
+        font-size: 18px;
+        color:var(--bee-heading-primary);
+        &:hover{
+            color: var(--bee-theme-3);
+        }
+    }
+
 }

@@ -15,9 +15,13 @@
                 height: 10px;
                 border-radius: 50%;
                 background-color: var(--bee-theme-1);
-                display: inline-block;
+                display: inline-block;                
+            }
+            & .subtitle-dot-color{
+                background-color: var(--bee-theme-3);
             }
         }
+
         & .title{
             color: var(--bee-heading-primary);
             text-transform: capitalize;

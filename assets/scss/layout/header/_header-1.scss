@@ -16,8 +16,14 @@
         padding-left: 15px;
     }
 }
-.bee-header-border{
-    border-bottom: 1px solid var(--bee-border-1);
+.bee-header{
+    &-border{
+        border-bottom: 1px solid var(--bee-border-1);
+        &-2{
+            border-color: var(--bee-border-4);
+        }
+
+    }
 }
 .bee-logo{
     & img{
@@ -124,6 +130,37 @@
             }
         }
     }
+    &-black{
+        & nav {
+            & ul{
+                & li{
+                    & .sub-menu{
+                        & li{
+                            &:hover{
+                                & > a{
+                                    color: var(--bee-theme-3); 
+                                }
+                            }
+                        }
+                    } 
+                    a{
+                        color: var(--bee-heading-primary);                   
+                        &:before{                      
+                            color: var(--bee-theme-3);                                    
+                        }
+                        &:hover{
+                            color: var(--bee-theme-3); 
+                        }
+                    }
+                    &:hover{
+                        & > a{
+                            color:var(--bee-theme-3);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .hero{
     background-color: var(--bee-common-black);
@@ -205,6 +242,39 @@
                     color: var(--bee-heading-primary);
                 }              
             }
+        }
+    }
+    &-right{
+        &-black{
+            & .bee-header-search{
+                padding: 0;
+                & button{
+                    & i{
+                        color: var(--bee-heading-primary);
+                        &:hover{
+                            color: var(--bee-theme-3);
+                        }
+                    }
+                }
+            }
+            & .bee-header-humberger{
+                & button{
+                    padding: 0;
+                    background-color: transparent;                    
+                    & i{
+                        color: var(--bee-heading-primary);
+                        &:hover{
+                            color: var(--bee-theme-3);
+                        }
+                    }
+                }
+            }
+        }
+        & .bee-header-sep{
+            width: 1px;
+            height: 40px;
+            background-color: #F2DDD1;
+            margin: 0 20px;
         }
     }
 
