@@ -32,18 +32,23 @@
                 @media #{$xl,$lg,$md,$xs}{
                     display: none;
                 }
-            }            
+            }        
+              
         }  
         & .white-title{                
             color: var(--bee-common-white);            
         }
         & .descriptions{
-            color: var(--bee-text-body);                    
+            color: var(--bee-text-body);   
+            font-size: 17px;                    
             & br{
                 @media #{$xs}{
                     display: none;    
                 }
             }
+        }  
+        & .white-des{            
+            color: #A3AEC3;;
         }  
     }    
 }

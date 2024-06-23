@@ -159,7 +159,8 @@
             &:hover{
                 color: var(--bee-theme-2);
                 opacity: 1;
-            }   
+            } 
+
         }
     }
         &-next{
@@ -209,6 +210,22 @@
         display: inline-block;
         margin:0 10px;
     }
+    &-3{
+        background-color: #fff;
+        left: 36%;
+        & span{     
+            height: 10px;
+            width: 10px;
+            opacity: 1;       
+            background-color: #DBDBDB;
+        }
+        & .slider-nav{
+            color: var(--bee-body-text);
+            &:hover{
+                color: var(--bee-theme-3);
+            }            
+        }
+    }
 }
 .bee-nav-rotate{
     @include transform (rotate(-180deg));
@@ -243,4 +260,37 @@
             display: none;    
         }   
     }
+    &-bg{
+        position: absolute;
+        width: 408px;
+        height: 360px;
+        left: 0;
+        bottom: 0;
+        background: #FF8653;
+        border-radius: 180px 180px 80px 80px;
+        z-index: -1;
+    }
+    &-quote-3{
+        margin-right: 30px;
+        width: 140px;
+        float: left;
+    }
+    &-text-3{
+        & .big-text h3{
+            font-size: 40px;
+            color: var(--bee-heading-primary);
+        }
+    }
+    &-author-3{
+        &-name{
+            color: var(--bee-heading-primary);
+            font-size: 30px;
+        }
+        &-title{
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }  
 }
+

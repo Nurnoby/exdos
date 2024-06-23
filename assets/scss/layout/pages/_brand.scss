@@ -1,0 +1,16 @@
+@use '../../utils' as *;
+.bee-brand{
+    &-area{
+        @include background;
+    }
+    &-item{
+        min-height: 125px;
+        border:1px solid var(--bee-border-2);
+        @include border-radius (15px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1px;
+        margin-right: -1px;
+    }
+}

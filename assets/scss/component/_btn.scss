@@ -153,3 +153,20 @@
     }
 
 }
+
+.bee-showcase-btn{
+    & a{
+        font-family: var(--bee-ff-heading);
+        font-size: var(--bee-fz-body);
+        text-transform: capitalize;           
+        @include transition(.3s); 
+        display: inline-block;
+        color: #A3AEC3;         
+        &:hover{
+            color: var(--bee-theme-3);
+        }
+        & i {
+            margin-left: 10px;
+        };
+    }
+}

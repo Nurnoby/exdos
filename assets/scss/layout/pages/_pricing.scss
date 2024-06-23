@@ -1,0 +1,70 @@
+@use '../../utils' as *;
+
+
+.bee-pricing{
+    &-item{
+        background-color: #FFF6F1;
+        padding:50px;
+        @include background;
+        @include border-radius (20px);
+        border:1px solid var(--bee-border-2);
+        border-color:transparent;
+        @include transition (.3s);
+        &:hover{
+            border-color:var(--bee-border-2) ;
+            & .bee-pricing-btn{
+                & .bee-btn{
+                    background-color: var(--bee-theme-1);
+                }               
+            }
+        }
+    }
+    &-icon{
+        position: relative;
+        & i{
+            font-family: var(--bee-ff-flaticon);
+            font-size: 96px;
+            color: var(--bee-heading-primary);
+            z-index: 1;
+            position: relative;
+            top: 5px;
+            left: 25px;
+        }
+        &-bg{
+            position: absolute;
+            left: 0;
+            top:50%;
+            @include transform (translateY(-50%));
+            & img{
+                z-index: -1;
+            }
+        }
+    }
+    &-price{
+        font-family: var(--bee-ff-heading);
+        font-size: 70px;
+        color: var(--bee-heading-primary);
+        display: inline-block;
+    }
+    &-feature{
+        padding-top: 25px;
+        border-top: 1px solid var(--bee-border-2);
+        & ul{
+            list-style: none;
+            & li{
+                font-size: 17px;
+                color: var(--bee-body-text);
+                margin-bottom: 15px;
+                &:last-child{
+                    margin: 0;
+                }
+                & i{
+                    font-family: var(--bee-ff-fontawesome);
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
