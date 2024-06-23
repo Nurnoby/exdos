@@ -1,0 +1,51 @@
+@use '../../utils' as *;
+.bee-process{
+    &-item{
+        border: 1px solid var(--bee-border-2);
+        padding: 60px 30px;
+        @include border-radius (215px);
+    }
+    &-step{
+        font-family: var(--bee-ff-body);
+        font-size: 15px;
+        color: #ffffff;
+        background-color: var(--bee-theme-3);
+        padding: 5px 25px;
+        @include border-radius (15px);
+    }
+    &-title{
+        font-size: 30px;
+        color: var(--bee-heading-primary);
+    }
+    &-descriptions{
+        font-size: 17px;
+    }
+    &-icon{
+        & i{
+            font-size: 60px;                  
+            line-height: 150px;      
+            color: var(--bee-heading-primary);            
+            display: inline-block;
+            background-color: #FFE9C9;
+            height: 150px;
+            width: 150px;
+            @include border-radius (50%);
+        }
+        &-2{
+            & i{
+                background-color: #D6F0FF;
+            }
+        }
+        &-3{
+            & i{
+                background-color: #FFE4FB;
+            }
+        }
+        &-4{
+            & i{
+                background-color: #E2EAD7;
+            }
+        }
+        
+    }
+}

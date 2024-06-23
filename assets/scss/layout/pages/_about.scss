@@ -113,15 +113,47 @@
             }
         }
 
-    }  
-    
-    &-circle-img{
-        position: absolute;
-        top:0;
-        right: 185px;
+    } 
+    &-img{
         & img{
-            max-width: inherit;
-            z-index: -1;
-        }        
+            z-index: 1;
+            margin-left: 120px;
+        }
+    } 
+    
+    &-shape-home3{
+        & .shape{
+            &-1{
+                position: absolute;
+                top:140px;
+                left: 10px;
+            }
+            &-2{
+                position: absolute;
+                top:0;
+                right: 150px;
+            }
+        }
+
+    }
+    
+    &-circle{
+        position: absolute;        
+        left: 60px;
+        bottom: 0;
+        height: 595px;
+        width: 615px;
+        background-color: #FEDC76;
+        z-index: -1;
+        @include border-radius (50%);
+        &-img{
+            position: absolute;
+            top:0;
+            right: 185px;
+            & img{
+                max-width: inherit;
+                z-index: -1;
+            }
+        }  
     }
 }

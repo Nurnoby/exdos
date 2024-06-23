@@ -29,6 +29,9 @@
         @include transition(.3s);
 
     }
+    &-orange{
+        background-color: var(--bee-theme-3);
+    }
 }
 .bee-btn-sec{
     color: var(--bee-heading-primary);

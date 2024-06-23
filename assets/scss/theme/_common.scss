@@ -66,6 +66,9 @@ img{
 .bee-white-bg{
 	background-color: #ffffff;
 }
+.bee-brand-bg-home3{	
+	background: radial-gradient(56.41% 5198.4% at 47.5% 62%, #0058FF 0%, #FF4C00 100%);
+}
 
 .bee-slide-transition{
 	-webkit-transition-timing-function: linear;
@@ -74,4 +77,11 @@ img{
 .bee-brand-slide-element{
 	width: auto;
 	display: inline-block;
+	& span{
+		font-size: 100px;
+		font-family: var(--bee-ff-heading);
+		color: #ffffff;
+		text-transform: uppercase;
+		line-height: 1;
+	}
 }
