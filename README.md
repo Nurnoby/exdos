@@ -24,6 +24,23 @@ Welcome to Exdos, where innovation, elegance, and limitless creativity converge.
              <li>Subscribe Added</li>
         </ul>
     </li>
+    <li>Home-3:
+        <ul>
+             <li>Header Done</li>
+             <li>Hero Done</li>
+             <li>Services with section title Done</li>
+             <li>About Done</li>
+             <li>Fact Done</li>
+             <li>portfolio Done</li>
+             <li>Cta video Done</li>
+             <li>Team Added</li>
+             <li>Award Added</li>
+             <li>FAQ Added</li>
+             <li>Testimonial Added</li>
+             <li>Blog Added</li>
+             <li>Subscribe Added</li>
+        </ul>
+    </li>
     
 
 </ul>

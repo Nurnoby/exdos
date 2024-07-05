@@ -1,0 +1,26 @@
+@use '../../utils' as *;
+.bee-cta{
+    &-video{
+        padding:306px 0;
+    }
+    &-area{
+        @include background;   
+        position: relative;   
+        &:after{
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: #001743;
+            opacity: .8;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+        }  
+    }
+    &-content{
+        position: relative;
+        z-index: 2;
+    }
+}

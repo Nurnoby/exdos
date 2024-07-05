@@ -1,1 +1,98 @@
 @use '../../utils' as *;
+.bee-footer{
+    &-widget-2{
+        &-title{
+            color: var(--bee-heading-primary);
+        }
+        
+    }
+    &-newsletter{
+        position: relative;
+        & button{
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+        & .form-check{
+            &-label{
+                font-family: var(--bee-ff-body);
+                font-size: 15px;
+            }
+        }
+    }
+    &-social-2{
+        & a{
+            color: #57595C;
+            & :hover{
+                color: var(--bee-theme-3);
+            }
+        }
+    }
+    &-content-2{
+        & ul{
+            & li{
+                & a{
+                    color: #57595C;
+                    &:hover{
+                        color: var(--bee-theme-3);
+                    }
+                }
+            }
+        }  
+        & span{
+            color: #57595C;
+        }     
+    }
+    &-contact-2{
+        & .contact-item{
+            & span{
+                color: #57595C;
+            }            
+            & h4{
+                & a{
+                    color: var(--bee-heading-primary);
+                    &:hover{
+                        color: var(--bee-theme-3);
+                    }
+                }
+            }
+        }        
+    }
+    &-bottom-2{
+        border-top: 1px solid var(--bee-border-2);
+    }
+    &-copyright-2{
+        & p{
+            color: #57595C;
+            margin: 0;
+            & a{
+                color: var(--bee-theme-3);
+            }
+        };
+    }
+    &-menu-2{
+        & ul{
+            &:last-child{
+              
+                    padding-right: 0;
+                    
+                
+            }
+            & li{
+                &:before{
+                    background-color: #57595C;
+                }
+
+                & a{
+                    color: #57595C;
+                    font-size: 15px;
+                    &:hover{
+                        color: var(--bee-theme-3);
+                       
+                    }
+                }
+            }
+        }
+      
+    }
+}
