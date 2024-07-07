@@ -1,7 +1,6 @@
 @use '../../utils' as *;
 
-.bee-service-area {
-    background-color: var(--bee-common-white);
+.bee-service-area {   
     @media #{$lg,$md}{
         padding-top: 100px;        
         padding-bottom: 100px;        
@@ -117,6 +116,28 @@
         }
 
     } 
+    &-home4{
+        padding:50px 35px 30px 40px;
+        & .bee-service{
+            &-icon{                
+                & i{
+                    font-size: 77px;
+                    margin-bottom: 25px;
+                    color: var(--bee-theme-3);
+                }
+            }
+            &-content{  
+                & h3{              
+                    margin:0;
+                    margin-bottom: 15px;
+                }            
+                & p{
+                    margin:0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }
 .bee-service-bg{
     & img{

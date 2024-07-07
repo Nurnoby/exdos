@@ -27,3 +27,30 @@
         border-bottom: 1px solid var(--bee-border-2);
     }
 }
+.bee-contact-image{
+    & img {
+        max-width: inherit;
+        right: 60px;
+        position: relative;
+    };
+}
+.bee-form-wrapper-2{
+    & input, & textarea{
+        height: 60px;
+        border:1px solid #57595C;
+        @include border-radius (10px);
+        padding: 0 25px;
+    }
+    & textarea{
+        height: 160px;
+        padding: 0 25px;
+        padding-top: 25px;
+    }
+    & .p-relative{
+        & i{
+            position: absolute;
+            top: 21px;
+            right: 25px;
+        }
+    }
+}

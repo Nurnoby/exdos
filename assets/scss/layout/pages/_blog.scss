@@ -78,4 +78,90 @@
 
         }
     }
+    &-3{
+        &-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;    
+        }
+        &-thumb{
+            & img{
+                @include border-radius (20px);
+            }
+        }
+        &-meta-date{    
+            width: 55px;
+            height: 170px;
+            padding: 15px 5px 5px 5px;
+            @include border-radius (10px);
+            position: relative;
+            display: flex;
+            align-items: end;
+            
+            & span{  
+                          
+                & i{
+                    font-family: var(--bee-ff-fontawesome);
+                    font-size: 20px;
+                    font-weight: 300;
+                    text-align: center;
+                    color: #57595C;
+                    height: 45px;
+                    width: 45px;
+                    line-height: 45px;                   
+                    background-color: #ffffff;                        
+                    border: 1px solid #57595C;    
+                    @include border-radius (10px);
+                }
+            }   
+            & a{
+                font-size: 15px;
+                text-transform: uppercase;
+                color: var(--bee-heading-primary);
+                font-weight: 500;
+                position: absolute;
+                top: 18%;
+                transform: rotate(-90deg);
+                width: 130px;
+                left: -36px; 
+            }         
+        }
+        &-meta-cat{
+            & span{
+                & a{
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: #57595C;
+                    font-weight: 500; 
+                    & i{
+                        font-family: var(--bee-ff-fontawesome);
+                        font-size: 16px;
+                        font-weight: 300;                        
+                        color: #FF5B15;                     
+                        margin-right: 10px;                   
+                    }
+                }
+            } 
+        }
+        &-title{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        &-btn{
+            & a{
+                font-family: var(--bee-ff-primary);
+                font-size: 18px;
+                color: #57595C;
+                text-transform: capitalize;
+                @include transition (.3s);
+                & i{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    color: var(--bee-theme-3);
+                }
+            }
+
+        }
+    }
 }

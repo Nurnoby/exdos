@@ -32,6 +32,43 @@
     &-orange{
         background-color: var(--bee-theme-3);
     }
+    &-border{
+        font-family: var(--bee-ff-heading);
+        font-size: var(--bee-fz-body);        
+        text-transform: capitalize;              
+        display: inline-block;       
+        background-color: transparent;
+        border: 1px solid var(--bee-border-2);
+        color: var(--bee-heading-primary);
+        @include border-radius (5px);
+        padding: 14px 36px;
+        & i{
+            margin-left: 5px;
+        }
+        &:hover{
+            background-color:var(--bee-theme-1);   
+            border-color: var(--bee-theme-1);     
+            color: var(--bee-common-white);    
+        }
+    }
+    &-icon{
+        font-family: var(--bee-ff-heading);
+        font-size: var(--bee-fz-body);        
+        text-transform: capitalize;        
+        display: inline-block;       
+        background-color: var(--bee-theme-1);        
+        color: #ffffff;
+        @include border-radius (5px);
+        padding: 17px 38px;
+        & i{
+            margin-left: 8px;
+        }
+        &:hover{
+            background-color:var(--bee-theme-3);   
+            border-color: var(--bee-theme-1);     
+            color: var(--bee-common-white);    
+        }
+    }
 }
 .bee-btn-sec{
     color: var(--bee-heading-primary);

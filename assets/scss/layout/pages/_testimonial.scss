@@ -293,3 +293,114 @@
         }
     }  
 }
+
+.radius-bg{
+    @include border-radius (140px);
+}
+
+
+.bee-swiper-thumb-active{
+    &:before{
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #D6CCB7;
+        top: 50%;
+        left: 25%;
+    
+      
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #D6CCB7;
+        top: 50%;
+        right: 25%;
+       
+    }
+    & .swiper-wrapper{
+        & .swiper-slide{
+            text-align: center;
+            & img{
+                width: 80px;
+                @include border-radius (50%);
+                @include transform(scale(.8));
+            }
+        }
+        & .swiper-slide-thumb-active{
+            & img{               
+                @include transform(scale(1));
+            }
+        }        
+    }
+
+}
+
+.bee-testimonial-item-3{
+    margin:0 70px;
+}
+.bee-testimonial-author-3-name{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: #D6CCB7;
+        top: 50%;
+        left: 25%;
+    
+      
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: #D6CCB7;
+        top: 50%;
+        right: 25%;
+       
+    }
+}
+
+.testimonial-nav{
+    position: absolute;
+    top:60%;
+    right: 0; 
+    font-family: var(--bee-ff-flaticon);
+    font-size: 30px;
+    color: #57595C;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #57595C;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    @include transition(.3s);
+    &:hover{
+        color: #ffffff;
+        border-color:#FF5B15;
+        background-color: #FF5B15;
+    }
+}
+.testimonial-slider-prev{
+    left: 0;
+}
+
+.testimonial-shape{
+    & .shape-1{
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    & .shape-2{
+        position: absolute;
+        bottom:0;
+        right: 0;
+    }
+}

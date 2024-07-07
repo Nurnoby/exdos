@@ -70,6 +70,11 @@
                 color: #EEEBE6;
             }
         }
+        &-3{
+            & .big-heading{
+                color: #C6E6F9;
+            }
+        }
     }
     &-input{   
         width: calc(100% - 205px);
@@ -87,4 +92,8 @@
             bottom: 18px;
         }
     }
+}
+
+.bg-radius{
+    @include border-radius (150px);
 }

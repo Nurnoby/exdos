@@ -8,6 +8,11 @@
         top:0;
         @include background;
     }
+    &-thumb{
+        & img{
+            max-width: inherit;
+        }
+    }
     &-item{
         border:1px solid var(--bee-border-2);
         @include border-radius (10px);

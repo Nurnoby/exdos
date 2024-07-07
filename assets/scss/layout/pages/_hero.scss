@@ -92,8 +92,7 @@
         &-black{         
             font-family: var(--bee-ff-body);
             color: var(--bee-text-body);
-            font-size: 17px;
-            margin-left: 150px;   
+            font-size: 17px;            
         }
         display: flex;
         align-items: center;
@@ -206,9 +205,32 @@
                 }
             }
         }
+        & .right-image{
+            right: 0;
+            bottom: 0;
+        }
+        &-circle{
+            &-1{
+                position: absolute;
+                background-color: #FFE6CE;
+                height: 717px;
+                width: 717px;
+                @include border-radius (50%);
+                bottom: 75px;
+                left: -75px;
+            }
+            &-2{
+                position: absolute;
+                background-color: #FFDFCD;
+                height: 640px;
+                width: 640px;
+                @include border-radius (50%);
+                top: -322px;
+                right: 363px;
+            }
+        }
     }
 }
-
 
 
 .hero-info{
@@ -239,5 +261,25 @@
         @extend .hero-social;
         margin-top:0;
         margin-bottom: 40px;
+    }
+}
+
+
+.hero-social-2{     
+    position: absolute;
+    left: -18px;
+    top: 55%;
+    z-index: 11;
+    font-size: 17px;
+    font-family: var(--bee-ff-body);
+    color: var(--bee-heading-primary);
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    & a{
+        padding-right: 10px;
+        &:hover{
+            color:var(--bee-theme-3);                
+        }
     }
 }

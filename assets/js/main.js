@@ -42,6 +42,27 @@
         // },
       });
 
+    // testimonial 3
+    var swiper_thumb = new Swiper(".bee-swiper-thumb-active", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      centeredSlides: true,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper_content = new Swiper(".swiper-testimonial", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".testimonial-slider-next",
+        prevEl: ".testimonial-slider-prev",
+      },
+      thumbs: {
+        swiper: swiper_thumb,
+      },
+    });
+
     // brand-slider 
     var swiper = new Swiper(".bee-brand-active", {  
         slidesPerView: 'auto',
@@ -88,6 +109,37 @@
           },
         },
       });
+    // project-slider 
+    var swiper = new Swiper(".bee-project-active", {         
+        spaceBetween:30,   
+        loop: true,                 
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+        navigation: {
+          nextEl: ".bee-project-next",
+          prevEl: ".bee-project-prev",          
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
 
 })(jQuery);
 
@@ -103,8 +155,7 @@
 
 	$("[data-bg-color]").each(function () {
         $(this).css("background-color", $(this).attr("data-bg-color"));
-
-    });
+  });
     
 	////////////////////////////////////////////////////
 	// magnificPopup img view */

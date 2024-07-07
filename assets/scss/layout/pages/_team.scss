@@ -28,6 +28,42 @@
             }
         }
     }
+    // &-info-3{
+    //     & a{
+    //         & h3{
+    //             font-size: 30px;
+    //             color: var(--bee-heading-primary);
+    //         }
+    //     }
+    // }
+    &-thumb-3{
+        & img{
+            z-index: 2;
+            position: relative;
+        }
+        &-bg{
+            background-color: #FFE9C9;
+            width: 308px;
+            height: 360px;
+            position: absolute;
+            bottom: -10px;
+            z-index: 1;
+            border-radius: 185px 185px 0px 0px;           
+
+        }
+        &-border{
+            background-color: transparent;
+            border: 1px solid #57595C;
+            width: 288px;
+            height: 360px;
+            position: absolute;
+            left: 10px;
+            bottom: 0;
+            z-index: 1;
+            border-radius: 185px 185px 0px 0px; 
+        }
+
+    }
     &-area{
         & .bee-section-title{
             padding-right: 100px;

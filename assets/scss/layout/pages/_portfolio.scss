@@ -169,3 +169,94 @@
         @include border-radius (15px);        
     }
 }
+
+.bee-project-item-2{
+    background-color: #D6F0FF;
+    @include border-radius (20px);
+    padding: 20px;
+    &:hover{
+        & a{
+            color: #ffffff;
+            background-color: var(--bee-theme-3);
+            border-color: var(--bee-theme-3);        
+        }
+    }
+    &-thumbnail{
+        & img{
+            @include border-radius (20px);
+        }
+    }
+    &-content{
+        margin-top: 35px;
+        padding:0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-category{
+        font-family: var(--bee-ff-body);
+        font-size: 15px;
+        color: #57595C;
+        text-transform: uppercase;
+    }
+    &-title{
+        font-family: var(--bee-ff-heading);
+        font-size: 30px;
+        color: var(--bee-heading-primary);
+        text-transform: capitalize;
+    }    
+}
+.bee-project-btn{
+    & a{
+        font-family: var(--bee-ff-fontawesome);
+        font-size: 22px;
+        color: #57595C;
+        text-align: center;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        display: inline-block;
+        border:1px solid #57595C;
+        @include border-radius(50%);
+        @include transition(.3s);        
+        &:hover{
+            color: #ffffff;
+            background-color: var(--bee-theme-3);
+            border-color: var(--bee-theme-3);
+        }
+    }
+}
+
+.custom-margin{
+    margin: 0 -100px;
+}
+
+
+.bee-project{
+    &-nav{
+        font-family: var(--bee-ff-flaticon);
+        color: #57595C;
+        font-size: 40px;
+        @include transition (.3s);
+        &:hover{
+            color: var(--bee-theme-3);
+        }
+    }
+    &-prev{
+        transform: rotate(180deg);      
+    }
+    &-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        & span{
+            height: 12px;
+            width: 12px;
+            background-color: #DBDBDB;
+            display: inline-block;
+            @include border-radius (50%);
+            margin: 0 10px;
+        }
+    }
+
+}

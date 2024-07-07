@@ -96,3 +96,63 @@
       
     }
 }
+.bee-footer-widget-3{
+    & .bee-footer-widget-title{
+        color: #fff;
+    }
+    & .bee-footer-content{
+        & ul {
+            & li{
+                & a{
+                    color: #B1B4BA;
+                    &:hover{
+                        color: #FF5B15;
+                    }
+                }
+            }
+        }
+        & span{
+            color: #B1B4BA;
+        }
+        
+    }
+    & .contact-item{
+        & span{
+            color: #B1B4BA;
+        }
+        & h4{
+            & a{
+            color: #ffffff;
+            }
+        }
+    }
+    & .bee-footer-newsletter{
+        &::placeholder{
+            color: red !important;
+        }
+        & .form-check-label{
+            color: #B1B4BA;
+        }
+
+    }
+
+}
+.bee-footer-social-3{
+    & a{
+        color: #B1B4BA;
+    }
+}
+.bee-footer-copyright-3{
+    & p{
+        color: #B1B4BA;
+    }
+}
+.bee-footer-menu-3{
+    & ul{
+        & li{
+            & a{
+                color: #B1B4BA;
+            }
+        }
+    }
+}

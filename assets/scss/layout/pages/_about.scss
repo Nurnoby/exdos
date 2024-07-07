@@ -157,3 +157,10 @@
         }  
     }
 }
+
+
+
+.bee-circle-bg{
+    background-color: #FFF3D7;
+    @include border-radius (357px);
+}
