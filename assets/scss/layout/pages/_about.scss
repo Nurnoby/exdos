@@ -164,3 +164,42 @@
     background-color: #FFF3D7;
     @include border-radius (357px);
 }
+
+.bee-founder{
+    &-content{
+        font-size: 40px;
+    }
+    &-info{
+        & .sep{
+            height: 40px;
+            width: 1px;
+            background-color: #FF3838;
+            margin:auto;
+        }
+    }
+    &-shape{
+        position:absolute;
+        width: 631px;
+        height: 631px;
+        background: linear-gradient(180deg, #F5F9FF 0%, rgba(255,230,225,.22) 100%);
+        filter: blur(42px);
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        @include border-radius(50%);
+        @include transform (translate(-50%,-50%));
+
+    }
+}
+
+.bee-about{
+        &-right{
+            width: 50%;
+            right: 0;
+            top:0;
+        }
+        &-fact-area{
+            display: flex;
+            justify-content: space-between;
+        }
+}

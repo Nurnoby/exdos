@@ -56,7 +56,7 @@
         font-size: var(--bee-fz-body);        
         text-transform: capitalize;        
         display: inline-block;       
-        background-color: var(--bee-theme-1);        
+        background-color: var(--bee-theme-4);        
         color: #ffffff;
         @include border-radius (5px);
         padding: 17px 38px;
@@ -64,7 +64,7 @@
             margin-left: 8px;
         }
         &:hover{
-            background-color:var(--bee-theme-3);   
+            background-color:var(--bee-theme-4);   
             border-color: var(--bee-theme-1);     
             color: var(--bee-common-white);    
         }

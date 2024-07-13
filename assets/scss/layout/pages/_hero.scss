@@ -283,3 +283,37 @@
         }
     }
 }
+.hero-social-h5{
+    & a{       
+        &:hover{
+            color:var(--bee-theme-4);                
+        }
+    }
+}
+.bee-hero-trust{
+    & h3{
+        margin-bottom: 5px;
+    }
+}
+
+.bee-hero-5-shape{
+    & .shape{
+        &-1{       
+            left: 0;
+            bottom: 30px;
+        }
+        &-2{       
+            left: 70px;
+            top:30%;
+        }
+        &-3{       
+            left: 39%;
+            top: 20%;
+        }
+        &-4{       
+            left: 42%;
+            bottom: 8%;
+        }
+    }
+
+}

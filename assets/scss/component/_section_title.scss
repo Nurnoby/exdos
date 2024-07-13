@@ -19,6 +19,9 @@
             }
             & .subtitle-dot-color{
                 background-color: var(--bee-theme-3);
+                &-2{
+                    background-color: var(--bee-theme-4);
+                }
             }
         }
 

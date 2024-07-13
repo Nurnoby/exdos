@@ -161,6 +161,37 @@
             }
         }
     }
+    &-h5{
+        & nav {
+            & ul{
+                & li{
+                    & .sub-menu{
+                        & li{
+                            &:hover{
+                                & > a{
+                                    color: var(--bee-theme-4); 
+                                }
+                            }
+                        }
+                    } 
+                    a{
+                        color: var(--bee-heading-primary);                   
+                        &:before{                      
+                            color: var(--bee-theme-4);                                    
+                        }
+                        &:hover{
+                            color: var(--bee-theme-4); 
+                        }
+                    }
+                    &:hover{
+                        & > a{
+                            color:var(--bee-theme-4);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .hero{
     background-color: var(--bee-common-black);
@@ -256,6 +287,15 @@
                         }
                     }
                 }
+                &-h5{
+                    & button{
+                        & i{                           
+                            &:hover{
+                                color: var(--bee-theme-4);
+                            }
+                        }
+                    }
+                }
             }
             & .bee-header-humberger{
                 & button{
@@ -268,6 +308,16 @@
                         }
                     }
                 }
+                &-h5{
+                    & button{                                            
+                        & i{                            
+                            &:hover{
+                                color: var(--bee-theme-4);
+                            }
+                        }
+                    }
+                }
+
             }
         }
         & .bee-header-sep{
